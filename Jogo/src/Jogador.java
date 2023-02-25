@@ -36,10 +36,6 @@ public class Jogador {
     }
 
     public void receberAntidoto() {
-        if (this.envenenado == false) {
-            this.envenenado = true;
-            return;
-        }
-        this.envenenado = false;
+        envenenado = !envenenado;
     }
 }
