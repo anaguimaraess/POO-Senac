@@ -1,13 +1,15 @@
-public class Produtos {
-    protected String nome;
-    protected double preco;
+import java.math.BigDecimal;
 
-    public Produtos(String nome, double preco) {
+public class Produto {
+    protected String nome;
+    protected BigDecimal preco;
+
+    public Produto(String nome, BigDecimal preco) {
         this.nome = nome;
         this.preco = preco;
     }
 
-    public Produtos() {
+    public Produto() {
     }
 
     public String getNome() {
@@ -18,11 +20,11 @@ public class Produtos {
         this.nome = nome;
     }
 
-    public double getPreco() {
+    public BigDecimal getPreco() {
         return preco;
     }
 
-    public void setPreco(double preco) {
+    public void setPreco(BigDecimal preco) {
         this.preco = preco;
     }
 
