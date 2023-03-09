@@ -1,0 +1,11 @@
+import java.math.BigDecimal;
+
+public class Main {
+    public static void main(String[] args) {
+        var v1 = new Presidente(new BigDecimal(321),
+                "juninho",
+                new BigDecimal(1000),
+                new BigDecimal(430));
+        System.out.println(v1.calcularSalario());
+    }
+}
